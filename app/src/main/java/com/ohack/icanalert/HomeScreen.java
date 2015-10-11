@@ -34,28 +34,28 @@ public class HomeScreen extends AppCompatActivity {
         if(language == 0){
             feed.setText(englishTxt[0]);
             alerts.setText(englishTxt[1]);
+            startActivity(intent);
             //calender.setText(englishTxt[2]);
         }
         else if(language == 1){
             feed.setText(spanishTxt[0]);
             alerts.setText(spanishTxt[1]);
+            startActivity(intent);
             //calender.setText(spanishTxt[2]);
         }
 
     }
 
-    public void init(){
 
-    }
 
     public void feedButton(View view){
-        Intent intent = new Intent(this, Feed.class);
-        intent.putExtra("language",language);
+        /*ntent intent = new Intent(this, Feed.class);
+        intent.putExtra("language",language);*/
     }
 
     public void alertButton(View view){
-        Intent intent = new Intent(this, Alerts.class);
-        intent.putExtra("language",language);
+        /*Intent intent = new Intent(this, Alerts.class);
+        intent.putExtra("language",language);*/
     }
 
 
