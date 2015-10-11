@@ -45,10 +45,6 @@ public class HomeScreen extends AppCompatActivity {
 
     }
 
-    public void init(){
-
-    }
-
     public void feedButton(View view){
         Intent intent = new Intent(this, Feed.class);
         intent.putExtra("language",language);
