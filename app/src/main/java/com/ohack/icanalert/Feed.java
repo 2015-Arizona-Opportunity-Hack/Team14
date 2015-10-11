@@ -26,7 +26,7 @@ public class Feed extends ListActivity {
 
         Intent intent = getIntent();
 
-        TwitterAuthConfig authConfig =  new TwitterAuthConfig("5619c235548c2bc0700001d0", "33fc324dfbb936aea3015f8524108eda9d59075d30da3a7def4bc8553e3dd289");
+        TwitterAuthConfig authConfig =  new TwitterAuthConfig("Y9UIuPZDC9ijnHxmvx3G7qdKl", "g9bE72th1SHQDANtVK1wCOhYwwnPJgU4gZEhP9wJkrAYyzBPBt");
         Fabric.with(this, new TwitterCore(authConfig), new TweetUi());
 
         final UserTimeline userTimeline = new UserTimeline.Builder()
