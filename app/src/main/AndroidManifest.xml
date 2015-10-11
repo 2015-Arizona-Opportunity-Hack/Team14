@@ -33,6 +33,11 @@
             android:label="@string/title_activity_alerts"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/title_activity_calendar"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="e7a41c25e5faa26766571079fc967b1b572e47c6" />
