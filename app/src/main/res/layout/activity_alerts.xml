@@ -2,6 +2,7 @@
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
 <<<<<<< HEAD
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:fitsSystemWindows="true"
@@ -12,13 +13,21 @@
     android:layout_height="match_parent" android:fitsSystemWindows="true"
     tools:context="com.ohack.icanalert.Alerts">
 >>>>>>> parent of 372e5b7... alerts
+=======
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.ohack.icanalert.Alerts">
+>>>>>>> parent of 372e5b7... alerts
 
     <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
         android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of 372e5b7... alerts
 =======
 >>>>>>> parent of 372e5b7... alerts
     </android.support.design.widget.AppBarLayout>
@@ -26,8 +35,11 @@
     <include layout="@layout/content_alerts" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> parent of 372e5b7... alerts
 =======
 >>>>>>> parent of 372e5b7... alerts
 </android.support.design.widget.CoordinatorLayout>
