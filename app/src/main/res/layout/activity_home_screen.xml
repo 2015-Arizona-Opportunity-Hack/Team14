@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:fitsSystemWindows="true"
-    tools:context="com.ohack.icanalert.HomeScreen">
+    android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
 
         <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
             android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
@@ -15,11 +15,29 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_home_screen" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
 
-    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:onClick="alertButton"
+        android:id="@+id/alertBtn"
+        android:text="asdf"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="fdsa"
+        android:onClick="feedButton"
+        android:id="@+id/feedBtn"
+        android:layout_below="@+id/alertBtn"
+        android:layout_alignLeft="@+id/alertBtn"
+        android:layout_alignStart="@+id/alertBtn" />
+
+
+
+
+
+</RelativeLayout>
