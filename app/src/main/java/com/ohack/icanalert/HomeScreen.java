@@ -51,6 +51,7 @@ public class HomeScreen extends AppCompatActivity {
     public void feedButton(View view){
         Intent intent = new Intent(this, Feed.class);
         intent.putExtra("language",language);
+        startActivity(intent);
     }
 
     public void alertButton(View view){
