@@ -24,12 +24,13 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
         feed = (Button)(findViewById(R.id.feedBtn));
         alerts = (Button)(findViewById(R.id.alertBtn));
-        calendar = (Button)(findViewById(R.id.calendarBtn));
+        //calendar = (Button)(findViewById(R.id.calendarBtn));
 
         Intent intent = getIntent();
         language = intent.getIntExtra("language",3); //0 eng, 1 span, //3 is improper input?
         String[] spanishTxt = {"información", "alertas", "calandria"};
         String[] englishTxt = {"information", "alerts", "calendar"};
+
 
 
         if(language == 0){
