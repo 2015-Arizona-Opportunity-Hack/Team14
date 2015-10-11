@@ -13,10 +13,13 @@ public class Alerts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alerts);
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> parent of 372e5b7... alerts
     }
 
 }
