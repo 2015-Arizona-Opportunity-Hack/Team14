@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ICanAlert</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_feed">Feed</string>
+    <string name="title_activity_alerts">Alerts</string>
 </resources>
