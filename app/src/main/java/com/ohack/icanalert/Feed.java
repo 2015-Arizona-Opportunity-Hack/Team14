@@ -17,6 +17,7 @@ import io.fabric.sdk.android.Fabric;
 
 public class Feed extends ListActivity {
 
+    private int language;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,19 +25,29 @@ public class Feed extends ListActivity {
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         Intent intent = getIntent();
+        language = intent.getIntExtra("language", 3);
 
         TwitterAuthConfig authConfig =  new TwitterAuthConfig("Y9UIuPZDC9ijnHxmvx3G7qdKl", "g9bE72th1SHQDANtVK1wCOhYwwnPJgU4gZEhP9wJkrAYyzBPBt");
         Fabric.with(this, new TwitterCore(authConfig), new TweetUi());
 
-
-
-        final UserTimeline userTimeline = new UserTimeline.Builder()
-                .screenName("chrisrobeless")
-                .build();
-        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
-                .setTimeline(userTimeline)
-                .build();
-        setListAdapter(adapter);
+        if (language == 0) {
+            final UserTimeline userTimeline = new UserTimeline.Builder()
+                    .screenName("BarackObama")
+                    .build();
+            final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
+                    .setTimeline(userTimeline)
+                    .build();
+            setListAdapter(adapter);
+        }
+        else if (language == 1){
+            final UserTimeline userTimeline = new UserTimeline.Builder()
+                    .screenName("MittRomney")
+                    .build();
+            final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
+                    .setTimeline(userTimeline)
+                    .build();
+            setListAdapter(adapter);
+        }
     }
 
 }
