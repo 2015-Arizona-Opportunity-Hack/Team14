@@ -14,39 +14,27 @@
 
     <Button
         android:layout_width="200dp"
-        android:layout_height="120dp"
+        android:layout_height="75dp"
 
         android:onClick="alertButton"
         android:id="@+id/alertBtn"
         android:text="asdf"
-        android:background="#0066FF"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="200dp"
-        android:layout_height="120dp"
+        android:layout_height="75dp"
         android:text="fdsa"
         android:onClick="feedButton"
         android:id="@+id/feedBtn"
-        android:background="#99CC33"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/alertBtn"
-        android:layout_toEndOf="@+id/alertBtn" />
+        android:layout_below="@+id/alertBtn"
+        android:layout_alignLeft="@+id/alertBtn"
+        android:layout_alignStart="@+id/alertBtn" />
 
-    <TextView
-        android:layout_width="200dp"
-        android:layout_height="55dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Home Screen"
-        android:id="@+id/textView3"
-        android:layout_marginTop="64dp"
-        android:layout_below="@+id/view"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="#FF0000"
-        android:gravity="center"/>
+
+
 
 
 </RelativeLayout>
