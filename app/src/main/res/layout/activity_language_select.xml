@@ -1,56 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/logo">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-
-        android:layout_marginBottom= "-7dp">
-
-        <Button
-            android:layout_width="match_parent"
-
-            android:layout_height="120dp"
-            android:text="English"
-            android:onClick="englishButton"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:layout_marginRight="-10dp"
-            android:layout_marginLeft="-10dp"
-            android:layout_margin="-10dp"
-            android:id="@+id/button"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_toLeftOf="@+id/button2"
-            android:layout_toStartOf="@+id/button2"
-            android:background="#0066FF"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:textSize="20sp"
-            android:layout_height="120dp"
-            android:text="Spanish"
-            android:onClick="spanishButton"
-            android:layout_weight="1"
-
-            android:id="@+id/button2"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:longClickable="false"
-            android:background="#99CC33"/>
-
-    </LinearLayout>
-
+    <include layout="@layout/content_language_select" />
 
 </RelativeLayout>
 

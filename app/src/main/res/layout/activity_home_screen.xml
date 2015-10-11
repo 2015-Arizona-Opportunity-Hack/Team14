@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@mipmap/ican_blur">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
     <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
         android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
@@ -12,28 +10,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="75dp"
-
-        android:onClick="alertButton"
-        android:id="@+id/alertBtn"
-        android:text="asdf"
-        android:layout_marginTop="150dp"
-        android:layout_below="@+id/view"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="75dp"
-        android:text="fdsa"
-        android:onClick="feedButton"
-        android:id="@+id/feedBtn"
-        android:layout_below="@+id/alertBtn"
-        android:layout_alignLeft="@+id/alertBtn"
-        android:layout_alignStart="@+id/alertBtn" />
-
-
+    <include layout="@layout/content_home_screen" />
 
 
 
