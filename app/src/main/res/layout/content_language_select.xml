@@ -30,7 +30,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Español"
+        android:text="Spanish"
         android:onClick="spanishButton"
         android:layout_weight="1"
         android:id="@+id/button2"
