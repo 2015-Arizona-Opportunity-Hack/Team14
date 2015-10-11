@@ -22,7 +22,6 @@ public class Feed extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed);
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         Intent intent = getIntent();
         language = intent.getIntExtra("language", 3);
@@ -32,7 +31,7 @@ public class Feed extends ListActivity {
 
         if (language == 0) {
             final UserTimeline userTimeline = new UserTimeline.Builder()
-                    .screenName("BarackObama")
+                    .screenName("people")
                     .build();
             final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
                     .setTimeline(userTimeline)
@@ -41,7 +40,7 @@ public class Feed extends ListActivity {
         }
         else if (language == 1){
             final UserTimeline userTimeline = new UserTimeline.Builder()
-                    .screenName("MittRomney")
+                    .screenName("peopleenespanol")
                     .build();
             final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
                     .setTimeline(userTimeline)
