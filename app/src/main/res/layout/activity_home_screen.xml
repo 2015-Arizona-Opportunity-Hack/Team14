@@ -18,10 +18,9 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="75dp"
-
         android:onClick="alertButton"
         android:id="@+id/alertBtn"
-        android:text="asdf"
+        android:text="Button 1"
         android:layout_marginTop="150dp"
         android:layout_below="@+id/view"
         android:layout_centerHorizontal="true" />
@@ -29,12 +28,22 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="75dp"
-        android:text="fdsa"
+        android:text="Button 2"
         android:onClick="feedButton"
         android:id="@+id/feedBtn"
         android:layout_below="@+id/alertBtn"
         android:layout_alignLeft="@+id/alertBtn"
         android:layout_alignStart="@+id/alertBtn" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Button 3"
+        android:onClick="calendarButton"
+        android:id="@+id/calendarBtn"
+        android:layout_below="@+id/feedBtn"
+        android:layout_alignLeft="@+id/feedBtn"
+        android:layout_alignStart="@+id/feedBtn" />
 
 
 

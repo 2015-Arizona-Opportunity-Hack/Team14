@@ -16,7 +16,7 @@ public class HomeScreen extends AppCompatActivity {
     private int language;
     Button feed;
     Button alerts;
-    //Button calender = new Button(this);
+    Button calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,22 +24,23 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
         feed = (Button)(findViewById(R.id.feedBtn));
         alerts = (Button)(findViewById(R.id.alertBtn));
+        calendar = (Button)(findViewById(R.id.calendarBtn));
 
         Intent intent = getIntent();
         language = intent.getIntExtra("language",3); //0 eng, 1 span, //3 is improper input?
         String[] spanishTxt = {"información", "alertas", "calandria"};
-        String[] englishTxt = {"information", "alerts", "calender"};
+        String[] englishTxt = {"information", "alerts", "calendar"};
 
 
         if(language == 0){
             feed.setText(englishTxt[0]);
             alerts.setText(englishTxt[1]);
-            //calender.setText(englishTxt[2]);
+            calendar.setText(englishTxt[2]);
         }
         else if(language == 1){
             feed.setText(spanishTxt[0]);
             alerts.setText(spanishTxt[1]);
-            //calender.setText(spanishTxt[2]);
+            calendar.setText(spanishTxt[2]);
         }
 
     }
@@ -60,6 +61,11 @@ public class HomeScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void calendarButton(View view){
+        Intent intent = new Intent(this, CalendarActivity.class);
+        intent.putExtra("language",language);
+        startActivity(intent);
+    }
 
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
