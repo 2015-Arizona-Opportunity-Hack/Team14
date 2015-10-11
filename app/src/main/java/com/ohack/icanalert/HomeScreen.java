@@ -42,11 +42,11 @@ public class HomeScreen extends AppCompatActivity {
             //calender.setText(spanishTxt[2]);
         }
 
-    }
 
-    public void init(){
 
     }
+
+
 
     public void feedButton(View view){
         Intent intent = new Intent(this, Feed.class);
